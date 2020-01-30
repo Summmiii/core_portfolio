@@ -1,0 +1,21 @@
+#shanghai{
+    position:absolute;
+    top:120vh;
+    left:80px; 
+    width:1000px;
+    height:650px;
+  }
+  #shanghai img{
+    width:800px;
+    display:inline;
+  }
+  #shanghaidesc{
+  /*   display:inline;
+    vertical-align:text-top; */
+    position:absolute;
+    left:680px;
+    top:260px;
+    font-size:140px;
+    font-family: 'Zhi Mang Xing', cursive;
+    color:#323232;
+  }
