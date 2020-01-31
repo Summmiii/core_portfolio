@@ -1,0 +1,44 @@
+
+body,html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  #full1 {
+    width: calc(100vw - 1300px);
+    height: calc(100vh - 500px);
+    box-sizing: border-box;
+    background: linear-gradient(to right, lightblue, pink);
+    padding: 5px;
+    position: fixed;
+    border-radius: 4px;
+    z-index: -1000;
+  }
+  
+  /*#content1 {
+    background: white;
+    position: absolute;
+    width: 97%;
+    height: 80%;
+  }*/
+
+  #content2 {
+    background: white;
+    border-radius: 100%;
+    width: 15%;
+    height: 15%;
+  }
+
+  #week2{
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 5px;
+  }
