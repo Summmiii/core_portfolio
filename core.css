@@ -26,11 +26,11 @@ html {
     height: 80%;
   }*/
 
-#content2 {
-  background: white;
+#circle {
+  background: black;
   border-radius: 100%;
-  width: 15%;
-  height: 15%;
+  width: 8%;
+  height: 1%;
 }
 
 #week2 {
