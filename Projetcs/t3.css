@@ -6,22 +6,6 @@ body {
   text-align: center;
 }
 
-#one,
-#two,
-#three,
-#four,
-#five,
-#six,
-#seven,
-#eight,
-#nine,
-#ten,
-#eleven {
-  text-decoration: none;
-  color: #514540;
-  padding-top: 10vh;
-}
-
 #place {
   text-align: center;
 }
@@ -34,11 +18,13 @@ body {
 #door,
 #window,
 #winter,
+#bedroom,
 #shelves,
 #bathroom,
 #study {
   color: #c0aca4;
   text-align: center;
+  text-decoration: none;
 }
 
 h3 {
