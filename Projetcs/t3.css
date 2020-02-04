@@ -1,4 +1,54 @@
-#place {
-  color: #aa01a3;
+html,
+body {
+  background-color: #eee4e0;
+  width: 100%;
+  height: 100%;
   text-align: center;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#ten,
+#eleven {
+  text-decoration: none;
+  color: #514540;
+  padding-top: 10vh;
+}
+
+#place {
+  text-align: center;
+}
+
+#corridor,
+#livingroom,
+#sofa,
+#table,
+#sofa2,
+#door,
+#window,
+#winter,
+#shelves,
+#bathroom,
+#study {
+  color: #c0aca4;
+  text-align: center;
+}
+
+h3 {
+  color: #412d25;
+  text-align: center;
+  padding-bottom: 3vh;
+}
+
+h1 {
+  color: #412d25;
+  text-align: center;
+  padding-top: 6vh;
 }
