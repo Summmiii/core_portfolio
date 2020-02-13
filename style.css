@@ -82,12 +82,13 @@ ul {
   position: absolute;
   top: 100vh;
   left: 80px;
-  width: 1000px;
+  width: 1500px;
   height: 650px;
 }
 #shanghai img {
-  width: 800px;
+  width: 780px;
   padding-top: 30vh;
+  padding-left: 2vw;
   display: inline;
 }
 #shanghaidesc {
@@ -104,14 +105,15 @@ vertical-align:text-top; */
 #things {
   position: absolute;
   top: 220vh;
-  left: 80px;
-  width: 1700px;
+  left: 90px;
+  width: 1600px;
   height: 650px;
 }
 
 #things img {
-  width: 650px;
+  width: 670px;
   display: inline;
+  padding-left: 1.5vw;
 }
 
 #thingsdesc {
