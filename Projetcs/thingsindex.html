@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Things Journal</title>
     <link rel="stylesheet" href="/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap"
@@ -23,6 +23,7 @@
       height: auto;
       z-index: 3;
       position: relative;
+      opacity: 0.8;
     }
 
     #lightman {
@@ -75,11 +76,21 @@
       left: 800px;
       z-index: 5;
     }
+    #edge {
+      z-index: 2;
+      width: 4%;
+      height: 98%;
+      position: absolute;
+      top: 1%;
+      left: 63.7%;
+      opacity: 0.5;
+    }
   </style>
   <body>
     <img id="pic" src="things.png" />
-    <a href="light.html"><img id="lightman" src="lightman.jpg"/></a>
-    <a href="obscure.html"><img id="obscureman" src="lightman.jpg"/></a>
+    <div>
+      <img id="edge" src="edge.jpg" />
+    </div>
 
     <div id="main">
       <a href="things3.html" id="things"

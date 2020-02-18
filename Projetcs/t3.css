@@ -45,3 +45,24 @@ h1 {
   margin: 0;
   border: 0;
 }
+
+#past {
+  position: absolute;
+  left: 27%;
+  color: #412d25;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#past:hover,
+#future:hover {
+  font-size: 23px;
+}
+
+#future {
+  position: absolute;
+  right: 27%;
+  color: #412d25;
+  font-size: 20px;
+  text-decoration: none;
+}
