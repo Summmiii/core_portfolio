@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Newspaper</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://fonts.newschool.edu/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: neue;
+        overflow-x: hidden;
+        /*         transform: scale(0.9) ; */
+      }
+      body {
+        /*         border: 4px black inset; */
+        /*         padding: 10px; */
+      }
+      #newspaper {
+        width: 100%;
+        height: 250vh;
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+        padding: 1vw;
+        box-sizing: border-box;
+        /**Important**/
+        grid-column-gap: 1vw;
+        grid-row-gap: 2vh;
+      }
+      #title {
+        grid-column: 1/17;
+        grid-row: 1;
+        background: #e42a1d;
+        color: white;
+        font-size: 5vw;
+        padding: 2vw;
+        box-sizing: border-box;
+        font-family: neue-display-random;
+      }
+      #headimg {
+        grid-column: 1/7;
+        grid-row: 2/5;
+        background: white;
+      }
+      #headimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #article1 {
+        grid-column: 7/17;
+        grid-row: 2/5;
+        background: #cccccc;
+        font-size: 1vw;
+        padding: 1.2vw;
+        color: black;
+        line-height: 3.8vh;
+      }
+      #article2 {
+        grid-column: 1/5;
+        grid-row: 5/9;
+        background: #cccccc;
+        color: black;
+        /*         padding: 2vw; */
+
+        /*         background-image: url(https://cdn.glitch.com/a53cf3b6-8406-4c09-8d6e-84c478f58a5b%2F83940956_3175662902443939_2773156114362485490_n.jpg?v=1582223982659);
+        background-opacity: 0.3; */
+      }
+
+      #article3 {
+        grid-column: 5/9;
+        grid-row: 5/12;
+        background: #cccccc;
+      }
+
+      #article4 {
+        grid-column: 5/9;
+        grid-row: 5/12;
+        background: transparent;
+        color: white;
+        font-size: 0.7vw;
+        padding: 2vw;
+        line-height: 3.5vh;
+        z-index: 100;
+      }
+      #article5 {
+        grid-column: 13/17;
+        grid-row: 5/17;
+        background: #cccccc;
+      }
+      #article6 {
+        grid-column: 1/5;
+        grid-row: 9/17;
+        background: #cccccc;
+      }
+      #article7 {
+        grid-column: 5/9;
+        grid-row: 12/17;
+        background: #cccccc;
+      }
+      #article8 {
+        grid-column: 9/13;
+        grid-row: 8/17;
+        background: #cccccc;
+      }
+      #article9 {
+        grid-column: 9/13;
+        grid-row: 5/8;
+        background: #cccccc;
+      }
+      #article10 {
+      }
+      #article11 {
+      }
+      #article12 {
+      }
+      #article13 {
+        grid-column: 1/5;
+        grid-row: 5/9;
+        background: transparent;
+        color: black;
+        font-size: 0.7vw;
+        padding: 2vw;
+        line-height: 3.5vh;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="newspaper">
+      <div id="title">The NEW SCHOOL NEWS</div>
+      <div id="headimg">
+        <img
+          src="https://www.newschool.edu/uploadedImages/Parsons/About_Parsons/Parsons-about.jpg"
+        />
+      </div>
+      <div id="article1">
+        Parsons School of Design, known colloquially as Parsons, is a private
+        art and design college located in the Greenwich Village neighborhood of
+        Lower Manhattan in New York City. It is one of the five colleges of The
+        New School. The school was founded in 1896 by William Merritt Chase in
+        search of individualistic artistic expression. It was the first of its
+        kind in the country to offer programs in fashion design, advertising,
+        interior design, and graphic design. The school offers undergraduate and
+        graduate programs ranging from architectural design, curatorial studies,
+        to textiles and design and urban ecologies. Among Parsons alumni are
+        many famous fashion designers, photographers, designers, illustrators,
+        and artists who have made significant contributions to their respective
+        fields. The college is a member of the National Association of Schools
+        of Art and Design and the Association of Independent Colleges of Art and
+        Design.
+      </div>
+      <div id="article2">
+        <img
+          style="opacity:0.3;position:relative; left:0; top:0;width:100%;height:100%;z-index:0"
+          src="https://cdn.glitch.com/a53cf3b6-8406-4c09-8d6e-84c478f58a5b%2F83940956_3175662902443939_2773156114362485490_n.jpg?v=1582223982659"
+        />
+      </div>
+      <div id="article3">
+        <img
+          style="opacity: 0.1; position:relative; left:0; top:0;width:100%;height:100%;z-index:0"
+          src="https://cdn.glitch.com/a53cf3b6-8406-4c09-8d6e-84c478f58a5b%2F84715048_198336268221271_3573637856143644950_n.jpg?v=1582234973272"
+        />
+      </div>
+      <div id="article4">
+        In the ongoing series “One of These Black Boys” (images 2 and 3),
+        alumnus Tariku Shiferaw (@abstractexit, MFA Fine Arts ‘15), interrogates
+        the act of mark-making in society, highlighting the power struggles
+        between those who are allowed to make marks and those who get marked.
+        Using music from the African diaspora as titles for his works,
+        Shiferaw’s art inherits the references, identities, and histories
+        portrayed through the songs. The titles thereby become a method of
+        marking, claiming space, and celebrating Black bodies and culture. 1.
+        "Tearz (Wu-Tang)," inspired by David Hammons’s “African-American Flag”2.
+        "Blue Notes (Meek Mill)," from the series “One of These Black Boys”3.
+        "Ivy (Frank Ocean)," also from the series “One of These Black Boys”
+        <br /><br />#PARSONSPROUD
+      </div>
+      <div id="article5"></div>
+      <div id="article6"></div>
+      <div id="article7"></div>
+      <div id="article8"></div>
+      <div id="article9"></div>
+      <div id="article10"></div>
+      <div id="article11"></div>
+      <div id="article12"></div>
+      <div id="article13">
+        <p>
+          This is a snapshot from the residency of Sheila Bridges, AAS Interior
+          Design graduate and industry changemaker. Bridges, who was named
+          “America’s Best Interior Designer” by @cnn and @time magazine, founded
+          her own interior design firm in 1994. She has thoughtfully designed
+          residences and offices for prominent entertainers, entrepreneurs, and
+          business professionals. Bridges cites persistence as a key to success,
+          and hopes her story will inspire young designers of color to
+          courageously follow their dreams as well. <br /><br />#PARSONSPROUD
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
