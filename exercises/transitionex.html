@@ -10,6 +10,8 @@
     body,
     html {
       width: 100%;
+      justify-content: center;
+      align-items: center;
     }
 
     #box {
@@ -23,13 +25,36 @@
     #box:hover {
       transform: rotate(360deg) scale(3);
       background-color: coral;
-      opacity: 0.3;
+      opacity: 0.5;
       width: 500px;
       transition-duration: 2s;
       transition: all 2s linear;
+      transition-delay: 0.3s;
+    }
+
+    #circle {
+      width: 200px;
+      height: 200px;
+      margin-top: 20vh;
+      margin-left: 2vw;
+      background-color: lightcoral;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite alternate-reverse;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+        background-color: lightcoral;
+      }
+      to {
+        transform: translateY(-10vh);
+        background-color: coral;
+      }
     }
   </style>
   <body>
     <div id="box"></div>
+    <div id="circle"></div>
   </body>
 </html>
