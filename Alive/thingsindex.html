@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Things Journal</title>
+    <link rel="stylesheet" href="/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    body {
+      background-color: black;
+      height: 100%;
+      list-style-type: none;
+    }
+    #pic {
+      width: 64%;
+      height: auto;
+      z-index: 3;
+      position: relative;
+      opacity: 0.8;
+    }
+
+    #lightman {
+      opacity: 0.8;
+      z-index: 2;
+      left: 63vw;
+      width: 35%;
+      height: auto;
+      position: absolute;
+    }
+    #obscureman {
+      z-index: 1;
+      opacity: 0.5;
+      top: 50vh;
+      left: 63vw;
+      width: 35%;
+      height: auto;
+      position: absolute;
+    }
+    #lightman:hover {
+      opacity: 1;
+    }
+    #obscureman:hover {
+      opacity: 0.3;
+    }
+    #obscure {
+      position: absolute;
+      top: 45vh;
+      font-family: "Zhi Mang Xing", cursive;
+      color: white;
+      text-decoration: none;
+    }
+
+    #light {
+      position: absolute;
+      top: 75vh;
+      font-family: "Zhi Mang Xing", cursive;
+      color: white;
+      text-decoration: none;
+    }
+    #things {
+      font-family: "Zhi Mang Xing", cursive;
+      color: white;
+      text-decoration: none;
+      font-size: 60px;
+    }
+    #main {
+      position: absolute;
+      top: 75vh;
+      left: 800px;
+      z-index: 5;
+    }
+    #edge {
+      z-index: 2;
+      width: 4%;
+      height: 98%;
+      position: absolute;
+      top: 1%;
+      left: 63.7%;
+      opacity: 0.5;
+    }
+  </style>
+  <body>
+    <img id="pic" src="things.png" />
+    <div>
+      <img id="edge" src="edge.jpg" />
+    </div>
+
+    <div id="main">
+      <a href="things3.html" id="things"
+        >"There, life would be easy, simple."</a
+      >
+    </div>
+  </body>
+</html>
