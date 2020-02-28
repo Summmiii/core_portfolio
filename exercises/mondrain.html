@@ -12,11 +12,23 @@
       height: 100%;
       margin: 0;
     }
+
     #red {
       background-color: red;
       width: 20%;
       height: 35%;
+      animation: bounce 1.5s infinite alternate-reverse;
     }
+
+    @keyframes bounce {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(10vw);
+      }
+    }
+
     #line1 {
       background-color: black;
       width: 50.5%;
@@ -51,6 +63,15 @@
       background-color: rgb(255, 230, 0);
       width: 5%;
       height: 40%;
+      animation: bounce 1.5s infinite alternate-reverse;
+    }
+    @keyframes bounce {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(2vw);
+      }
     }
     #line4 {
       background-color: black;
@@ -110,6 +131,15 @@
       left: 20.5%;
       top: 60%;
       position: absolute;
+      animation: bounce 1.5s infinite alternate-reverse;
+    }
+    @keyframes bounce {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(10vw);
+      }
     }
     #line6 {
       background-color: black;
