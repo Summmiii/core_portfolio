@@ -17,15 +17,15 @@
       background-color: red;
       width: 20%;
       height: 35%;
-      animation: bounce 1.5s infinite alternate-reverse;
+      animation: shift 1.5s infinite alternate-reverse;
     }
 
-    @keyframes bounce {
+    @keyframes shift {
       from {
         transform: translateX(0);
       }
       to {
-        transform: translateX(10vw);
+        transform: translateX(20vw);
       }
     }
 
@@ -36,14 +36,14 @@
       left: 0;
       top: 35%;
       position: absolute;
-      animation: bounce 1.5s infinite alternate-reverse;
+      animation: change 1.5s infinite alternate-reverse;
     }
-    @keyframes bounce {
+    @keyframes change {
       from {
         transform: translateX(0);
       }
       to {
-        transform: translateX(10vw);
+        transform: translateX(20vw);
       }
     }
     #line2 {
@@ -67,14 +67,14 @@
       left: 0;
       top: 60%;
       position: absolute;
-      animation: bounce 1.5s infinite alternate-reverse;
+      animation: shift 1.5s infinite alternate-reverse;
     }
-    @keyframes bounce {
+    @keyframes shift {
       from {
         transform: translateX(0);
       }
       to {
-        transform: translateX(10vw);
+        transform: translateX(30.5vw);
       }
     }
     #yellow {
@@ -193,8 +193,8 @@
         sans-serif;
       font-size: 2.5vw;
       float: right;
-      padding-top: 25%;
-      padding-right: 10%;
+      padding-top: 45vh;
+      padding-right: 5vw;
       animation: move 4s;
     }
     @keyframes move {
