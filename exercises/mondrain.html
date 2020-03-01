@@ -36,6 +36,15 @@
       left: 0;
       top: 35%;
       position: absolute;
+      animation: bounce 1.5s infinite alternate-reverse;
+    }
+    @keyframes bounce {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(10vw);
+      }
     }
     #line2 {
       background-color: black;
@@ -58,11 +67,6 @@
       left: 0;
       top: 60%;
       position: absolute;
-    }
-    #yellow {
-      background-color: rgb(255, 230, 0);
-      width: 5%;
-      height: 40%;
       animation: bounce 1.5s infinite alternate-reverse;
     }
     @keyframes bounce {
@@ -70,9 +74,16 @@
         transform: translateX(0);
       }
       to {
-        transform: translateX(2vw);
+        transform: translateX(10vw);
       }
     }
+    #yellow {
+      background-color: rgb(255, 230, 0);
+      width: 5%;
+      height: 40%;
+      z-index: 2;
+    }
+
     #line4 {
       background-color: black;
       z-index: 5;
@@ -82,6 +93,7 @@
       top: 60%;
       position: absolute;
     }
+
     #grey2 {
       background-color: rgb(247, 245, 245);
       width: 15%;
@@ -122,6 +134,15 @@
       left: 40.5%;
       top: 60%;
       position: absolute;
+      animation: bounce 1.5s infinite alternate-reverse;
+    }
+    @keyframes bounce {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(10vw);
+      }
     }
     #blue {
       background-color: rgb(40, 40, 161);
@@ -149,10 +170,45 @@
       left: 20.5%;
       top: 95%;
       position: absolute;
+      animation: bounce 1.5s infinite alternate-reverse;
+    }
+    @keyframes bounce {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(10vw);
+      }
+    }
+    #mondrain {
+      color: white;
+      text-align: center;
+      padding-top: 45%;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 2.5vw;
+    }
+    #text {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 2.5vw;
+      float: right;
+      padding-top: 25%;
+      padding-right: 10%;
+      animation: move 3s;
+    }
+    @keyframes move {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
     }
   </style>
 
   <body>
+    <div id="text">Why are Mondrain's Blocks moving?</div>
     <div id="red"></div>
     <div id="grey1"></div>
     <div id="yellow"></div>
@@ -160,7 +216,7 @@
     <div id="grey3"></div>
     <div id="grey4"></div>
     <div id="grey5"></div>
-    <div id="blue"></div>
+    <div id="blue"><div id="mondrain">This is Mondrain</div></div>
     <div id="line1"></div>
     <div id="line2"></div>
     <div id="line3"></div>
