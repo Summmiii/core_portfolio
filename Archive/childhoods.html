@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Childhoods</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      #television {
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        z-index: 200;
+      }
+      #telimg {
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        width: 52vw;
+        height: calc(52vw * 0.75);
+        z-index: -100;
+      }
+      #home {
+        z-index: 500;
+        width: 2.5%;
+        position: absolute;
+        top: 59%;
+        left: 68.5%;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Her and Her Childhoods</h1>
-      <img id="one" src="old pics/Childhoods/IMG_0543.JPG" />
-      <img id="two" src="old pics/Childhoods/IMG_0545.JPG" />
-      <img id="three" src="old pics/Childhoods/IMG_0554.JPG" />
-      <img id="four" src="old pics/Childhoods/IMG_0576.JPG" />
-      <img id="five" src="old pics/Childhoods/IMG_0577.JPG" />
-      <img id="six" src="old pics/Childhoods/IMG_9842.JPG" />
-      <button>HOME</button>
+    <div id="television">
+      <img id="television" src="old pics/Childhoods/frame.png" />
     </div>
+    <img id="telimg" src="pixel.gif" />
+    <p>
+      <a href="index.html">
+        <img id="home" src="tv/redbutton.png" />
+      </a>
+    </p>
   </body>
+  <script>
+    const array = [
+      "/Users/sumi/Documents/SessionK-Lab/coooore_lab_sumi/Archive/old pics/Childhoods/1.png",
+      "/Users/sumi/Documents/SessionK-Lab/coooore_lab_sumi/Archive/old pics/Childhoods/2.png",
+      "/Users/sumi/Documents/SessionK-Lab/coooore_lab_sumi/Archive/old pics/Childhoods/3.png",
+      "/Users/sumi/Documents/SessionK-Lab/coooore_lab_sumi/Archive/old pics/Childhoods/4.png",
+      "/Users/sumi/Documents/SessionK-Lab/coooore_lab_sumi/Archive/old pics/Childhoods/5.png",
+      "/Users/sumi/Documents/SessionK-Lab/coooore_lab_sumi/Archive/old pics/Childhoods/6.png"
+    ];
+
+    document.body.onkeydown = function(e) {
+      if (e.keyCode == 32) {
+        changeImg();
+      }
+    };
+
+    function changeImg() {
+      document.getElementById("telimg").src =
+        array[Math.floor(Math.random() * array.length)];
+    }
+  </script>
 </html>
