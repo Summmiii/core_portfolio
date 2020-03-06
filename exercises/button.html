@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Childhoods</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      #television {
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        z-index: 200;
+      }
+      #telimg {
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        width: 52vw;
+        height: calc(52vw * 0.75);
+        z-index: -100;
+      }
+      #home {
+        z-index: 500;
+        width: 2.5%;
+        position: absolute;
+        top: 59%;
+        left: 68.5%;
+      }
+      #button {
+        z-index: 500;
+        position: absolute;
+        margin-left: 90%;
+        margin-top: 1.7vh;
+        width: 6vw;
+        height: 5vw;
+        background-color: rgb(124, 24, 24);
+        color: white;
+        border: none;
+        border-radius: 30%;
+        line-height: 25px;
+        font-size: 20px;
+        text-align: center;
+        box-shadow: 0 6px rgb(110, 110, 110);
+        font-weight: 200;
+      }
+      #button:hover {
+        background-color: rgb(70, 12, 12);
+      }
+      h1 {
+        position: absolute;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 5vw;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button" onclick="clicking()">CHANGE<br />CHANNEL</button>
+    <h1>Family Channel</h1>
+    <div id="television">
+      <img id="television" src="image/frame.png" />
+    </div>
+    <img id="telimg" src="image/pixel.gif" />
+  </body>
+  <script>
+    const array = [
+      "image/1.png",
+      "image/2.png",
+      "image/3.png",
+      "image/4.png",
+      "image/5.png",
+      "image/6.png"
+    ];
+
+    // document.button.onClick = function(e) {
+    //   if (e.keyCode == 32) {
+    //     changeImg();
+    //   }
+    // };
+
+    function clicking() {
+      document.getElementById("telimg").src =
+        array[Math.floor(Math.random() * array.length)];
+    }
+    console.log(telimg);
+  </script>
+</html>
