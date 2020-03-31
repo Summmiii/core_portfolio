@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sis&Bro</title>
+    <title>Hey! It's Your Buddies!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.iconscout.com/icon/premium/png-256-thumb/cat-455-896812.png"
+      type="image/gif"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      #television {
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        z-index: 200;
+      }
+      #telimg {
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        width: 52vw;
+        height: calc(52vw * 0.75);
+        z-index: -100;
+      }
+      #home {
+        z-index: 500;
+        width: 2.5%;
+        position: absolute;
+        top: 59%;
+        left: 68.5%;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Sisters and Brothers</h1>
-      <img id="" src="" />
-      <img id="" src="" />
-      <img id="" src="" />
-      <img id="" src="" />
-      <img id="" src="" />
-      <img id="" src="" />
-      <img id="" src="" />
-      <img id="" src="" />
-      <button>HOME</button>
+    <div id="television">
+      <img id="television" src="old pics/SistersBrothers/yellowtv.png" />
     </div>
+    <img id="telimg" src="pixel.gif" />
+    <p>
+      <a href="index.html">
+        <img id="home" src="tv/redbutton.png" />
+      </a>
+    </p>
   </body>
+  <script>
+    const array = [
+      "old pics/SistersBrothers/1.png",
+      "old pics/SistersBrothers/2.png",
+      "old pics/SistersBrothers/3.png",
+      "old pics/SistersBrothers/4.png",
+      "old pics/SistersBrothers/5.png",
+      "old pics/SistersBrothers/6.png"
+    ];
+
+    document.body.onkeydown = function(e) {
+      if (e.keyCode == 32) {
+        changeImg();
+      }
+    };
+
+    function changeImg() {
+      document.getElementById("telimg").src =
+        array[Math.floor(Math.random() * array.length)];
+    }
+  </script>
 </html>
