@@ -1,0 +1,121 @@
+body,
+html {
+  z-index: 0;
+  height: 100%;
+  background-color: black;
+}
+#line1 {
+  z-index: 1000;
+  background-color: white;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 33.3%;
+}
+#line2 {
+  z-index: 1000;
+  background-color: white;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 66.7%;
+}
+.container {
+  z-index: 100;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 0;
+  /* background-color: #2196f3; */
+  /* padding: 10px; */
+}
+
+.grid {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px dotted rgba(255, 255, 255, 0.8);
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+#one,
+#ten,
+#five {
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  padding-top: 8%;
+  font-size: 3.3vw;
+  font-weight: 800;
+}
+#one:hover {
+  font-size: 0;
+  background-image: url(sumi-parsons3.jpeg);
+  background-size: cover;
+}
+#ten:hover {
+  font-size: 0;
+  background-image: url(sumi-parsons5.jpeg);
+  background-size: cover;
+}
+#five:hover {
+  font-size: 0;
+  background-image: url(sumi-parsons8.jpeg);
+  background-size: cover;
+}
+.number {
+  font-size: 7vw;
+}
+
+#eight,
+#nineteen,
+#fifteen,
+#twentyone,
+#seventeen,
+#twentyfour {
+  font-family: "Source Code Pro", monospace;
+  font-size: 3.3vw;
+  padding-top: 28%;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+}
+#eight:hover,
+#nineteen:hover,
+#fifteen:hover,
+#twentyone:hover,
+#seventeen:hover,
+#twentyfour:hover {
+  font-size: 0;
+  padding: 8.8% 5%;
+  background-color: white;
+  color: black;
+}
+#eight:hover:after {
+  content: attr(data-hover);
+  font-size: 0.82vw;
+  font-weight: 350;
+}
+#fifteen:hover:after,
+#seventeen:hover:after {
+  content: attr(data-hover);
+  font-size: 0.77vw;
+  font-weight: 350;
+}
+#nineteen:hover:after,
+#twentyone:hover:after,
+#twentyfour:hover:after {
+  content: attr(data-hover);
+  font-size: 1.7vw;
+  font-weight: 350;
+}
+
+@media only screen and (min-device-width: 2300px) and (max-device-width: 3100px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #mobile {
+    display: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #laptop {
+    display: hidden;
+  }
+}
