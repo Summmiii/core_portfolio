@@ -7,22 +7,23 @@ html {
 #line1 {
   z-index: 1000;
   background-color: white;
-  width: 5px;
-  height: 100%;
+  width: 3px;
   position: absolute;
   left: 33.3%;
+  margin: 0;
 }
 #line2 {
   z-index: 1000;
   background-color: white;
-  width: 5px;
-  height: 100%;
+  width: 2px;
   position: absolute;
   left: 66.7%;
+  margin: 0;
 }
 .container {
   z-index: 100;
-  height: 100%;
+  /* height: 100%; */
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -37,6 +38,8 @@ html {
   color: white;
   font-family: "Source Code Pro", monospace;
   text-align: center;
+  overflow: hidden;
+  display: block;
 }
 
 #one,
@@ -46,24 +49,73 @@ html {
   padding-top: 8%;
   font-size: 3.3vw;
   font-weight: 800;
+  animation: animated-cursor 800ms steps(200, end) infinite;
 }
-#one:hover {
-  font-size: 0;
-  background-image: url(sumi-parsons3.jpeg);
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.918);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#two,
+#three,
+#four,
+#six,
+#seven,
+#twelve,
+#thirteen,
+#sixteen,
+#twentytwo {
+  background-image: url(pixel.gif);
+  background-size: contain;
+}
+#two:hover {
+  background-image: url(sumi1.jpeg);
   background-size: cover;
 }
-#ten:hover {
-  font-size: 0;
-  background-image: url(sumi-parsons5.jpeg);
+
+#four:hover {
+  background-image: url(sumi4.jpeg);
   background-size: cover;
 }
-#five:hover {
-  font-size: 0;
-  background-image: url(sumi-parsons8.jpeg);
+#six:hover {
+  background-image: url(sumi7.jpeg);
   background-size: cover;
 }
+#twelve:hover {
+  background-image: url(sumi9.jpeg);
+  background-size: cover;
+}
+#thirteen:hover {
+  background-image: url(sumi2.jpeg);
+  background-size: cover;
+}
+#twentytwo:hover {
+  background-image: url(sumi6.jpeg);
+  background-size: cover;
+}
+
 .number {
   font-size: 7vw;
+}
+
+.word {
+  padding-left: 10%;
+  animation: animated-text 5s 0s infinite normal both;
+  overflow: hidden;
+}
+@keyframes animated-text {
+  from {
+    width: 800px;
+    overflow-x: hidden;
+  }
+  to {
+    width: 0;
+    transition-delay: 10s;
+  }
 }
 
 #eight,
@@ -73,11 +125,13 @@ html {
 #seventeen,
 #twentyfour {
   font-family: "Source Code Pro", monospace;
-  font-size: 3.3vw;
-  padding-top: 28%;
+  font-size: 2.5vw;
+  padding-top: 30%;
   border: 3px solid rgba(255, 255, 255, 0.8);
   font-weight: 800;
+  overflow: hidden;
 }
+
 #eight:hover,
 #nineteen:hover,
 #fifteen:hover,
@@ -94,6 +148,7 @@ html {
   font-size: 0.82vw;
   font-weight: 350;
 }
+
 #fifteen:hover:after,
 #seventeen:hover:after {
   content: attr(data-hover);
@@ -108,14 +163,304 @@ html {
   font-weight: 350;
 }
 
-@media only screen and (min-device-width: 2300px) and (max-device-width: 3100px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+#mobile {
+  display: none;
+  color: white;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #laptop {
+    display: none;
+  }
   #mobile {
-    display: hidden;
+    display: block;
+    width: 100vw;
+  }
+  #projector {
+    display: none;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+#mobile {
+  z-index: 0;
+  height: 135%;
+  background-color: black;
+  font-family: "Source Code Pro", monospace;
+}
+.container2 {
+  z-index: 100;
+  height: 150%;
+  background-image: url(grid.png);
+  background-size: contain;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+#giticon {
+  width: 15%;
+  position: absolute;
+  left: 70%;
+  top: 185%;
+  z-index: 1000;
+}
+#insicon {
+  width: 20%;
+  position: absolute;
+  left: 49%;
+  top: 184%;
+  z-index: 1000;
+}
+#pinicon {
+  width: 16%;
+  position: absolute;
+  left: 32%;
+  top: 185%;
+  z-index: 1000;
+}
+#porticon {
+  width: 16%;
+  position: absolute;
+  left: 13%;
+  top: 185%;
+  z-index: 1000;
+}
+
+#one2 {
+  z-index: 1000;
+  background-color: rgb(2, 2, 2);
+  width: 65vw;
+  height: 28.5vh;
+  position: absolute;
+  top: 9%;
+  left: 17.5%;
+  text-align: left;
+  animation: lightclick 100ms 800ms steps(200, end) infinite;
+}
+/* @keyframes lightclick {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.918);
+  }
+  to {
+    border-right-color: transparent;
+  }
+} */
+#pone {
+  z-index: 1500;
+  width: 65vw;
+  height: 28.5vh;
+  position: absolute;
+  top: 9%;
+  left: 17.5%;
+  opacity: 0.3;
+}
+.text {
+  z-index: 10000;
+  color: white;
+  font-size: 3.8vw;
+  padding: 5%;
+  animation: moving-text 5s both;
+}
+@keyframes moving-text {
+  from {
+    width: 800px;
+    overflow-y: hidden;
+  }
+  to {
+    width: 92%;
+  }
+}
+#dreaming {
+  z-index: 1000;
+  color: rgb(126, 96, 13);
+  position: absolute;
+  top: 33.5%;
+  left: 2%;
+  font-size: 18vw;
+  font-weight: 800;
+  animation: moving-caption 7s 1s both;
+}
+
+#two2 {
+  z-index: 1000;
+  background-color: rgb(0, 0, 0);
+  width: 65vw;
+  height: 37.5vh;
+  position: absolute;
+  top: 61%;
+  left: 17.5%;
+  text-align: left;
+}
+
+#ptwo {
+  z-index: 1500;
+  opacity: 0.3;
+  width: 65vw;
+  height: 37.5vh;
+  position: absolute;
+  top: 61%;
+  left: 17.5%;
+}
+#change {
+  z-index: 1000;
+  color: rgb(100, 13, 126);
+  position: absolute;
+  top: 95.5%;
+  left: 2%;
+  font-size: 18vw;
+  font-weight: 800;
+  animation: moving-caption 7s 1s both;
+}
+
+#three2 {
+  z-index: 1000;
+  background-color: rgb(3, 3, 3);
+  width: 65vw;
+  height: 33vh;
+  position: absolute;
+  top: 122%;
+  left: 17.5%;
+  text-align: left;
+}
+#pthree {
+  z-index: 1500;
+  width: 65vw;
+  height: 33vh;
+  position: absolute;
+  top: 122%;
+  left: 17.5%;
+  opacity: 0.3;
+}
+#now {
+  z-index: 1000;
+  color: rgb(11, 53, 116);
+  position: absolute;
+  top: 152%;
+  left: 2%;
+  font-size: 18vw;
+  font-weight: 800;
+  animation: moving-caption 7s both;
+}
+
+@keyframes moving-caption {
+  from {
+    width: 800px;
+    overflow-y: hidden;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 2880px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #laptop {
-    display: hidden;
+    display: block;
+    width: 100vw;
+  }
+  #mobile {
+    display: none;
+  }
+  #projector {
+    display: none;
+  }
+}
+
+#projector {
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  overflow: hidden;
+}
+
+#center {
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+.item {
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 5px black solid;
+  display: inline-flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: white;
+  background-image: url("pixel.gif");
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.item img:hover {
+  opacity: 1;
+}
+#first {
+  border: 60px rgb(126, 96, 13) solid;
+}
+#second {
+  border: 60px rgb(100, 13, 126) solid;
+}
+#third {
+  border-left: 60px rgb(11, 53, 116) solid;
+  border-right: 60px rgb(11, 53, 116) solid;
+  border-top: 20px rgb(11, 53, 116) solid;
+}
+#info {
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  z-index: 1000;
+  line-height: 95px;
+  position: absolute;
+  padding-left: 82%;
+  padding-top: 50%;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1vw;
+  color: rgb(48, 48, 48);
+}
+#tv {
+  background-image: url(https://i.pinimg.com/originals/78/7b/01/787b01a0a118327f361659eb31e26a54.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  border-left: 60px rgb(139, 139, 139) solid;
+  border-right: 60px rgb(139, 139, 139) solid;
+  border-top: 20px rgb(139, 139, 139) solid;
+}
+
+#tvtitle {
+  opacity: 0.65;
+  font-family: "Source Code Pro", monospace;
+  font-size: 5vw;
+  color: rgb(48, 48, 48);
+}
+
+@media only screen and (min-device-width: 5000px) and (max-device-width: 7000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #projector {
+    display: block;
+    width: 100vw;
+  }
+  #laptop {
+    display: none;
+  }
+  #mobile {
+    display: none;
   }
 }

@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Career</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div id="laptop">
@@ -20,7 +21,7 @@
           PROJECT <br />
           <div class="number" style="color: rgb(126, 96, 13);">ONE</div>
         </div>
-        <div id="two" class="grid"></div>
+        <div id="two" class="grid" class="pixel"></div>
         <div id="three" class="grid"></div>
         <div id="four" class="grid"></div>
         <div id="five" class="grid">
@@ -37,7 +38,7 @@
         the sense of fluency and softness, Inspired by Zaha Hadid’s architecture, 
         this project is about connecting and expressing this unique sense in apparel."
         >
-          CONCEPT
+          <div class="word">DUCTILE</div>
         </div>
         <div id="nine" class="grid"></div>
         <div id="ten" class="grid">
@@ -57,7 +58,7 @@
         But they can’t see the unusualness. This makes me think about color normality in fashion. What
         is normal? "
         >
-          CONCEPT
+          <div class="word">COLOR</div>
         </div>
         <div id="sixteen" class="grid"></div>
         <div
@@ -68,7 +69,7 @@
         Being a high school student, I love to social with different people and spend a whole afternoon 
         in the mall. This project is about my life both as an artist and as a normal person."
         >
-          CONCEPT
+          <div class="word">ME</div>
         </div>
         <div id="eighteen" class="grid"></div>
         <div
@@ -81,7 +82,7 @@
       PAPER
       "
         >
-          MEDIA
+          <div class="word">FLINTINESS</div>
         </div>
         <div id="twenty" class="grid"></div>
         <div
@@ -93,7 +94,7 @@
       COLORPAPER
       COTTON"
         >
-          MEDIA
+          <div class="word">WEAKNESS</div>
         </div>
         <div id="twentytwo" class="grid"></div>
         <div id="twentythree" class="grid"></div>
@@ -106,11 +107,134 @@
       FISHBONE
       COLLAGES"
         >
-          MEDIA
+          <div class="word">ARTIST</div>
         </div>
       </div>
     </div>
 
-    <div id="mobile"></div>
+    <div id="mobile">
+      <div class="container2">
+        <div id="one2">
+          <div data-aos="zoom-in-down" class="text">
+            When I was a little girl, I dreamed about going to Parsons, one of
+            the world's top art schools.<br /><br />Day by day, I worked so hard
+            on both school and my portfolio, learning everything about Fashion
+            Design from "zero". <br /><br />It was hell and heaven.
+          </div>
+        </div>
+        <img src="pixel.gif" id="pone" />
+
+        <div id="dreaming">7A.M.</div>
+        <div id="two2">
+          <div data-aos="zoom-in-down" class="text">
+            I got admitted with a high Dean's scholarship. Being able to study
+            at Parsons became my pride. Not untill the second year of college
+            did I realise that Fashion is not my thing: I'm more addicted to
+            digital media; plus a bloody truth that only the top 5% fashion
+            student could stand out from the rest. "Winning students who already
+            made clothes for brands and celebrities" seems unrealistic.
+          </div>
+        </div>
+        <img src="pixel.gif" id="ptwo" />
+
+        <div id="change">10A.M.</div>
+        <div id="three2">
+          <div data-aos="zoom-out-down" class="text">
+            Should I give up?<br /><br />
+            ...<br /><br /><br />
+            Now that after a year of Communication Design, I love UIUX Design
+            and I'm pretty sure this is the career I want to pursue.<br /><br /><br />
+            Sometimes, making the right decision is harder than persistance...
+          </div>
+        </div>
+        <img src="pixel.gif" id="pthree" />
+
+        <div id="now">1P.M.</div>
+
+        <div id="foot">
+          <a href="https://github.com/Summmiii"
+            ><img id="giticon" src="giticon.png"
+          /></a>
+          <a href="https://www.instagram.com/sumixu_projects/"
+            ><img id="insicon" src="insicon.png"
+          /></a>
+          <a href="https://www.pinterest.com/sumi1112/"
+            ><img id="pinicon" src="pinicon.png"
+          /></a>
+          <a
+            href="https://summmiii.github.io/sumiii_cooore-interaction/index.html"
+            ><img id="porticon" src="porticon.png"
+          /></a>
+        </div>
+      </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </div>
+    <div id="projector">
+      <div id="center">
+        <div class="item">
+          <img id="first" />
+        </div>
+        <div class="item">
+          <img id="second" />
+        </div>
+        <div class="item">
+          <img id="third" />
+        </div>
+        <div class="item" id="tv">
+          <div id="tvtitle">
+            @Shuming Xu
+          </div>
+        </div>
+        <div id="info">
+          WAS a Fashion Designer<br />Parsons School of Design<br />sumiiixu@gmail.com
+        </div>
+      </div>
+    </div>
+    <script>
+      const first = document.getElementById("first");
+      const second = document.getElementById("second");
+      const third = document.getElementById("third");
+      const firstlist = [
+        "https://i.pinimg.com/originals/78/7b/01/787b01a0a118327f361659eb31e26a54.gif",
+        "https://i.pinimg.com/originals/35/bd/41/35bd41848a3dd2a8a8179b63ee2decc8.jpg",
+        "https://i.pinimg.com/originals/71/fa/af/71faafaa8180cd9ded24d874b641debd.jpg",
+        "https://pic4.zhimg.com/v2-21210f43cf352a6d6b370f22d27d7b39_b.jpg",
+        "https://i.pinimg.com/originals/01/00/2f/01002fe0bb03d805bc03fdc32bf0114c.jpg",
+      ];
+      const secondlist = [
+        "https://i.pinimg.com/originals/78/7b/01/787b01a0a118327f361659eb31e26a54.gif",
+        "https://i.pinimg.com/originals/ed/f8/4f/edf84fef0501c7360e91f9466131f132.jpg",
+        "https://pic4.zhimg.com/v2-21210f43cf352a6d6b370f22d27d7b39_b.jpg",
+        "https://i.pinimg.com/originals/1b/64/73/1b6473b6c83f6e89eef17f594a91e47b.jpg",
+        "https://i.pinimg.com/originals/73/3c/3e/733c3e4d2262eb12ed30c5f8977cf364.jpg",
+      ];
+      const thirdlist = [
+        "https://i.pinimg.com/originals/78/7b/01/787b01a0a118327f361659eb31e26a54.gif",
+        "https://i.pinimg.com/originals/d9/03/f9/d903f9e6ad5100d7c94e1d896fd97b71.jpg",
+        "https://i.pinimg.com/originals/e7/e3/27/e7e327ce07fba912eaf5c9c043bde1ea.jpg",
+        "https://i.pinimg.com/originals/e3/55/0b/e3550bd909ce0cb9a98dd1c35cb5159e.jpg",
+        "https://pic4.zhimg.com/v2-21210f43cf352a6d6b370f22d27d7b39_b.jpg",
+      ];
+      const colorimg =
+        "https://pic4.zhimg.com/v2-21210f43cf352a6d6b370f22d27d7b39_b.jpg";
+      function changeImage(elem, piclist) {
+        let i = 0;
+        setInterval(function () {
+          if (i < piclist.length) {
+            elem.src = piclist[i];
+            i = i + 1;
+          } else {
+            elem.src = colorimg;
+            i = 0;
+          }
+        }, 2000);
+      }
+      changeImage(first, firstlist, colorimg);
+      changeImage(second, secondlist, colorimg);
+      changeImage(third, thirdlist, colorimg);
+    </script>
   </body>
 </html>

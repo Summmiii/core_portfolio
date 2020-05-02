@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto:700");
+    @keyframes showTopText {
+      0% {
+        transform: translate3d(0, 100%, 0);
+      }
+      40%,
+      60% {
+        transform: translate3d(0, 30%, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    @keyframes showBottomText {
+      0% {
+        transform: translate3d(0, -100%, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .animated-title {
+      color: #222;
+      font-family: Roboto, Arial, sans-serif;
+      height: 90vmin;
+      left: 30%;
+      position: absolute;
+      top: 55%;
+      transform: translate(-50%, -50%);
+      width: 90vmin;
+    }
+    .animated-title > div {
+      height: 50%;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+    }
+    .animated-title > div div {
+      font-size: 12vmin;
+      padding: 2vmin 0;
+      position: absolute;
+    }
+    .animated-title > div div span {
+      display: block;
+    }
+    .animated-title > div.text-top {
+      border-bottom: 1vmin solid #000;
+      top: 0;
+    }
+    .animated-title > div.text-top div {
+      animation: showTopText 1.5s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      bottom: 0;
+      transform: translate(0, 100%);
+    }
+    .animated-title > div.text-top div span:first-child {
+      color: #767676;
+    }
+    .animated-title > div.text-bottom {
+      bottom: 0;
+    }
+    .animated-title > div.text-bottom div {
+      animation: showBottomText 1s;
+      animation-delay: 1.75s;
+      animation-fill-mode: forwards;
+      top: 0;
+      transform: translate(0, -100%);
+    }
+  </style>
+  <body>
+    <div class="animated-title">
+      <div class="text-top">
+        <div>
+          <span style="line-height: 20vh; font-size: 10vw;">10 Rules</span>
+          <span style="font-size: 4vw;">for Students & Teachers</span>
+        </div>
+      </div>
+      <div class="text-bottom">
+        <div style="font-size: 1.5vw;">by John Cage & Sister Corita Kent</div>
+      </div>
+    </div>
+  </body>
+</html>
