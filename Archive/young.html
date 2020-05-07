@@ -42,7 +42,11 @@
   </head>
   <body>
     <div id="television">
-      <img id="television" src="old pics/Young/purpletv.png" />
+      <img
+        id="television"
+        onclick="clicking()"
+        src="old pics/Young/purpletv.png"
+      />
     </div>
     <img id="telimg" src="pixel.gif" />
     <p>
@@ -63,10 +67,16 @@
       "old pics/Young/8.PNG",
       "old pics/Young/9.PNG",
       "old pics/Young/10.PNG",
-      "old pics/Young/11.PNG"
+      "old pics/Young/11.PNG",
     ];
 
-    document.body.onkeydown = function(e) {
+    function clicking() {
+      document.getElementById("telimg").src =
+        array[Math.floor(Math.random() * array.length)];
+    }
+    console.log(telimg);
+
+    document.body.onkeydown = function (e) {
       if (e.keyCode == 32) {
         changeImg();
       }

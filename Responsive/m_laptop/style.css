@@ -319,6 +319,15 @@ html {
   font-weight: 800;
   animation: moving-caption 7s 1s both;
 }
+@keyframes moving-caption {
+  from {
+    width: 800px;
+    overflow-y: hidden;
+  }
+  to {
+    width: 0;
+  }
+}
 
 #three2 {
   z-index: 1000;
